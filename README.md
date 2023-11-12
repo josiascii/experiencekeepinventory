@@ -10,4 +10,4 @@ You can use the `/expcheck` command to check whether you have enough EXP to keep
 
 ## Download
 - via [GitHub](https://github.com/josiascii/ExperienceKeepInventory/releases)
-- via [Modrinth](https://modrinth.com/plugin/ExperienceKeepInventory)
+- via [Modrinth](https://modrinth.com/plugin/experiencekeepinventory)
