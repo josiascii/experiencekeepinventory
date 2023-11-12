@@ -24,8 +24,10 @@ public final class ExperienceKeepInventory extends JavaPlugin implements Command
         if (command.getName().equalsIgnoreCase("expcheck")) {
             if (sender instanceof Player) {
                 Player player = (Player) sender;
+                int player_level = player.getLevel();
+                float player_exp = player.getExp() * player.getExpToLevel();
                 int amount_of_items = amountOfItems(player);
-                int total_exp = (int) player.getExp() * player.getExpToLevel() + levelToExp(player.getLevel());
+                int total_exp = (int) player_exp + levelToExp(player_level);
                 if (total_exp >= amount_of_items && amount_of_items != 0) {
                     player.sendMessage(ChatColor.DARK_GREEN + "Enough EXP [" + ChatColor.GRAY + total_exp + ChatColor.DARK_GREEN + "] to save your items [" + ChatColor.GRAY + amount_of_items + ChatColor.DARK_GREEN + "]");
                 } else if (total_exp < amount_of_items && amount_of_items != 0) {
