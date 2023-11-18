@@ -3,6 +3,6 @@ version: '${version}'
 main: at.josias.experiencekeepinventory.ExperienceKeepInventory
 api-version: '1.20'
 commands:
-  expcheck:
-    description: Checks if you have enough EXP in case of death to keep the items instead of dropping them
+  xpcheck:
+    description: Checks if you have enough XP in case of death to keep the items instead of dropping them
     usage: /<command>

@@ -21,7 +21,7 @@ public final class ExperienceKeepInventory extends JavaPlugin implements Command
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (command.getName().equalsIgnoreCase("expcheck")) {
+        if (command.getName().equalsIgnoreCase("xpcheck")) {
             if (sender instanceof Player) {
                 Player player = (Player) sender;
                 int player_level = player.getLevel();
@@ -29,10 +29,10 @@ public final class ExperienceKeepInventory extends JavaPlugin implements Command
                 int amount_of_items = amountOfItems(player);
                 int total_exp = (int) player_exp + levelToExp(player_level);
                 if (total_exp >= amount_of_items && amount_of_items != 0) {
-                    player.sendMessage(ChatColor.DARK_GREEN + "Enough EXP [" + ChatColor.GRAY + total_exp + ChatColor.DARK_GREEN + "] to save your items [" + ChatColor.GRAY + amount_of_items + ChatColor.DARK_GREEN + "]");
+                    player.sendMessage(ChatColor.DARK_GREEN + "Enough XP [" + ChatColor.GRAY + total_exp + ChatColor.DARK_GREEN + "] to save your items [" + ChatColor.GRAY + amount_of_items + ChatColor.DARK_GREEN + "]");
                 } else if (total_exp < amount_of_items && amount_of_items != 0) {
                     int exp_needed = amount_of_items - total_exp;
-                    player.sendMessage(ChatColor.DARK_RED + "You need " + ChatColor.GRAY + exp_needed + ChatColor.DARK_RED + " more EXP [" + ChatColor.GRAY + total_exp + ChatColor.DARK_RED + "] to save your items [" + ChatColor.GRAY + amount_of_items + ChatColor.DARK_RED + "]");
+                    player.sendMessage(ChatColor.DARK_RED + "You need " + ChatColor.GRAY + exp_needed + ChatColor.DARK_RED + " more XP [" + ChatColor.GRAY + total_exp + ChatColor.DARK_RED + "] to save your items [" + ChatColor.GRAY + amount_of_items + ChatColor.DARK_RED + "]");
                 } else {
                     player.sendMessage("You have nothing to lose :)");
                 }
@@ -58,7 +58,7 @@ public final class ExperienceKeepInventory extends JavaPlugin implements Command
                 event.setDroppedExp(dropped_exp);
                 player.setExp(0);
                 player.setLevel(0);
-                player.sendMessage(ChatColor.DARK_GREEN + "Items [" + ChatColor.GRAY + amount_of_items + ChatColor.DARK_GREEN + "] kept due to enough EXP [" + ChatColor.GRAY + total_exp + ChatColor.DARK_GREEN + "]");
+                player.sendMessage(ChatColor.DARK_GREEN + "Items [" + ChatColor.GRAY + amount_of_items + ChatColor.DARK_GREEN + "] kept due to enough XP [" + ChatColor.GRAY + total_exp + ChatColor.DARK_GREEN + "]");
             } else if (total_exp < amount_of_items && amount_of_items != 0) {
                 for (ItemStack item : player.getInventory().getContents()) {
                     if (item != null) {
@@ -73,7 +73,7 @@ public final class ExperienceKeepInventory extends JavaPlugin implements Command
                 player.setExp(0);
                 player.setLevel(0);
                 player.getInventory().clear();
-                player.sendMessage(ChatColor.DARK_RED + "Items [" + ChatColor.GRAY + amount_of_items + ChatColor.DARK_RED + "] dropped due to insufficient EXP [" + ChatColor.GRAY + total_exp + ChatColor.DARK_RED + "]");
+                player.sendMessage(ChatColor.DARK_RED + "Items [" + ChatColor.GRAY + amount_of_items + ChatColor.DARK_RED + "] dropped due to insufficient XP [" + ChatColor.GRAY + total_exp + ChatColor.DARK_RED + "]");
             } else {
                 if(total_exp > 100) {
                     total_exp = 100;
