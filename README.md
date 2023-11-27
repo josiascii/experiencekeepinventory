@@ -1,7 +1,5 @@
 # Experience keepInventory
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://donate.josias.at)
-
 ## Description
 
 A simple plugin that changes the way the keepInventory gamerule works.  
