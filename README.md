@@ -1,7 +1,5 @@
 # Experience keepInventory
 
-<img width="auto" height="100px" src="https://github.com/Josiascii/ExperienceKeepInventory/blob/main/icon.png">
-
 ## Description
 
 A simple plugin that changes the way the keepInventory gamerule works.  
