@@ -1,5 +1,7 @@
 # Experience keepInventory
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6S2RKQE5)
+
 ## Description
 
 A simple plugin that changes the way the keepInventory gamerule works.  
@@ -9,7 +11,6 @@ A simple plugin that changes the way the keepInventory gamerule works.
 You can use the `/xpcheck` command to check whether you have enough XP to keep all your items if you die. The number of experience points should outweigh the total number of items in your inventory. If the player does not have enough XP, all items will be dropped as normal.
 
 ## Download
+
 - via [GitHub](https://github.com/Josiascii/ExperienceKeepInventory/releases/latest)
 - via [Modrinth](https://modrinth.com/plugin/experiencekeepinventory)
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6S2RKQE5)
