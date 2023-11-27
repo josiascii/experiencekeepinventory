@@ -1,4 +1,6 @@
-# <img width="auto" height="25px" src="https://github.com/Josiascii/ExperienceKeepInventory/blob/main/icon.png"> Experience keepInventory
+# Experience keepInventory
+
+<img width="auto" height="100px" src="https://github.com/Josiascii/ExperienceKeepInventory/blob/main/icon.png">
 
 ## Description
 
