@@ -10,4 +10,5 @@ You can use the `/xpcheck` command to check whether you have enough XP to keep a
 
 ## Download
 
+- via [GitHub](https://github.com/josiascii/experiencekeepinventory/releases)
 - via [Modrinth](https://modrinth.com/plugin/experiencekeepinventory)
